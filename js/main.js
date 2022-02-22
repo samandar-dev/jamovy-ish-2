@@ -48,3 +48,8 @@ open.addEventListener('click', function () {
     count = 0;
   }
 })
+
+// elMenuRemov.addEventListener('click', function () {
+//   elMenuBox.classList.remove('open-menu');
+// })
+
