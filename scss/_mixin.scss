@@ -29,3 +29,9 @@
   margin-bottom: 45px;
   padding: 0 15px;
 }
+
+@mixin list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

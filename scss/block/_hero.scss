@@ -2,12 +2,6 @@
   position: relative;
   top: 0;
   width: 100%;
-  height: 80vh;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
   height: 100%;
 }
 
@@ -27,28 +21,6 @@
 
 .carousel-item:nth-child(3) {
   background-image: url("../../images/slider-banner/slider-show-3.jpg");
-}
-
-@media screen and (max-width: 1200px) {
-  .carousel-item {
-    background-size: 100% 70vh;
-  }
-}
-@media screen and (max-width: 990px) {
-  .carousel-item {
-    background-size: 100% 50vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .carousel-item {
-    background-size: 100% 40vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .carousel-item {
-    background-size: 100% auto;
-  }
 }
 
 // CORUSEL BTNS PART
@@ -153,6 +125,8 @@
 
 .hero__title-anim-1 {
   transform: translateX(-800px);
+  color: $color-2;
+
   animation: title-anim-1 1s 0.9s both;
 
   @keyframes title-anim-1 {
@@ -311,6 +285,7 @@
   padding-bottom: 7px;
   margin-bottom: 0;
 
+  color: $color-2;
   animation: title-anim-2 0.7s 1s both;
 
   @keyframes title-anim-2 {
@@ -416,6 +391,7 @@
 
 .hero__title-anim-3 {
   text-transform: capitalize;
+  color: $color-2;
 
   animation: hero__title-anim-3 0.8s 0.8s both;
 
@@ -471,6 +447,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .carousel-item {
+    background-size: 100% 60vh;
+  }
+  .hero__corusel-box {
+    height: 480px;
+  }
   .hero__desc-one {
     width: 46%;
   }
@@ -500,6 +482,12 @@
 }
 
 @media screen and (max-width: 990px) {
+  .carousel-item {
+    background-size: 100% 50vh;
+  }
+  .hero__corusel-box {
+    height: 400px;
+  }
   .hero__desc-one {
     width: 65%;
   }
@@ -516,6 +504,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-item {
+    background-size: 100% 35vh;
+  }
+  .hero__corusel-box {
+    height: 300px;
+  }
   .hero__desc-one {
     width: 100%;
   }
@@ -549,6 +543,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .carousel-item {
+    background-size: 100% auto;
+  }
+  .hero__corusel-box {
+    height: 200px;
+  }
   .hero__desc-one {
     display: none;
   }
