@@ -1,0 +1,156 @@
+/* MODAL PART DESGIN BY AKBARALI */
+
+.user {
+  width: 830px !important;
+
+  &__box {
+    width: 830px !important;
+    background-color: $bg-color-1;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    padding: 15px;
+  }
+
+  &__btn-close {
+    @include border-none();
+
+    &:hover .user__icon-x{
+      color: $color-4;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__border {
+    position: relative;
+    border-bottom: 1px solid $bg-col-f4;
+    margin: 0 0 13px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      width: 55%;
+      border-bottom: 1px solid $bg-color-13;
+    }
+  }
+
+  &__icon-x {
+    font-size: 28px;
+    font-weight: 600;
+    color: $color-2;
+    transition: all 0.3s linear;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $font-1;
+    color: $bg-color-2;
+    padding-bottom: 8px;
+
+  }
+
+  &__query {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: $font-1;
+    color: $color-8;
+    margin: 0 0 14px;
+  }
+
+  &__from {
+    width: 100%;
+  }
+
+  &__label {
+    width: 100%;
+    border: 1px solid $bg-col-e5;
+    margin-bottom: 10px;
+
+    &:hover {
+      border: 1px solid $bg-color-13;
+    }
+  }
+
+  &__span {
+    padding: 9px;
+    border-right: 1px solid $bg-col-e5;
+  }
+
+  &__input {
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: $color-8;
+    padding-left: 20px;
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__checkbox {
+    font-weight: 400;
+    font-size: 11px;
+    color: $col-bb;
+    margin: 21px 0 23px 0;
+  }
+
+  &__check {
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  &__icon-login {
+    font-size: 21px;
+    color: $bg-col-e5;
+  }
+  &__btn {
+    background-color: $bg-color-2;
+    border: none;
+    border-radius: 3px;
+    font-family: $font-1;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    color: $color-1;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: $bg-color-5;
+    }
+  }
+
+  &__icon-enve {
+    position: relative;
+    top: -2px;
+    font-size: 21px;
+    color: $col-6565;
+    margin-right: 10px;
+  }
+
+  &__link {
+    font-family: $font-2;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $col-6aa;
+  }
+}
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 0;
+    margin: 1.75rem auto;
+  }
+}
